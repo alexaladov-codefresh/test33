@@ -2,8 +2,8 @@
 
 Use Codefresh [Vault](https://www.vaultproject.io) plugin to make key-value pairs stored in a vault available as environmental variables for further steps.
 
-NOTE: this plugin currently supports only token authentication and Key/Value secrets engine.
---------------------------------------------------------------------------------------------
+NOTE: this plugin currently supports token authentication and Key/Value secrets engine only.
+
 
 ## Usage
 
@@ -11,6 +11,7 @@ Set required and optional environment variables and add the following step to yo
 
 Example Variables:
 
+The example below will authenticate to vault server `https://vault.testdomain.io:8200` using token `s.4wtaMJuZ7dv0c4XuRaasLUOG` and export all secrets found in path `secret/codefreshsecret` as ENV variables available for further steps.
 
 ```text
 VAULT_ADDR=https://vault.testdomain.io:8200
